@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
 	public bool IsThereATutorial;
 	private Animator UIAnimator;
 	private bool ControlsEnabled = true;
+	public float SpedUpTime = 2.5f;
 
 	private void Start()
 	{
@@ -52,6 +53,20 @@ public class GameManager : MonoBehaviour
 			{
 				Application.Quit();
 			}
+
+			// Speed up the game if the speed up button is held
+			if (Input.GetButton("Speed Up"))
+			{
+				Time.timeScale = SpedUpTime;
+			}
+			else
+			{
+				Time.timeScale = 1f;
+			}
+		}
+		else
+		{
+			Time.timeScale = 1f;
 		}
 	}
 

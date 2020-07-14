@@ -43,3 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0e9418336c8235448763a0deede4b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  Robots: []
+  UI: {fileID: 0}
+  IsThereATutorial: 0
+  SpedUpTime: 3
